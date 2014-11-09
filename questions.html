@@ -1,0 +1,6 @@
+<h3 class="Score">Score: {{game.score}}</h3>
+<p class="btn btn-default QuestionHeader">Question: {{game.questionNum}}</p>
+<p class="Question">{{game.currentQuestion.question}}</p>
+<ul>
+	<li class = "answer" ng-repeat="answer in game.currentQuestion.answers"><span ng-click="checkAnswer(answer)">{{answer.answer}}</span></li>
+</ul>
